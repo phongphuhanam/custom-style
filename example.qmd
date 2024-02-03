@@ -1,0 +1,21 @@
+---
+title: "Custom-style Example"
+filters:
+  - custom-style
+format: 
+  pdf:
+    pdf-engine: pdflatex
+    keep-tex: true
+    include-in-header: 
+      text: |
+        \definecolor{myhl231108}{RGB}{219, 48, 122}
+  
+  docx: default
+---
+
+## Heading
+
+This filter adds formatting to heading text.
+[This is the color for format]{custom-style="myhl231108"}
+
+
