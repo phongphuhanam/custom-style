@@ -1,0 +1,14 @@
+// https://raw.githubusercontent.com/quarto-journals/article-format-template/main/_extensions/aft/custom.scss
+
+/*-- scss:defaults --*/
+$mypink: rgb(219, 48, 122);
+$mypinkbold: rgb(121, 4, 55);
+
+/*-- scss:rules --*/
+.color-mypink {
+  color: $mypink;
+}
+.color-mypinkbold {
+  color: $mypink;
+  font-weight: bold;
+}

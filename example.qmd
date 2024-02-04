@@ -3,19 +3,30 @@ title: "Custom-style Example"
 filters:
   - custom-style
 format: 
+  html: 
+    theme: 
+      light: [flatly, custom.scss]
+      dark: [darkly, custom.scss]
+      # custom.scss
+
   pdf:
     pdf-engine: pdflatex
     keep-tex: true
     include-in-header: 
       text: |
-        \definecolor{myhl231108}{RGB}{219, 48, 122}
-  
+        \definecolor{mypink2}{RGB}{219, 48, 122}
+        \newcommand\mypink[1]{\textcolor{mypink2}{#1}}
+        \newcommand\mypinkbold[1]{\textcolor{mypink2}{\textbf{#1}}}
+
   docx: default
 ---
 
 ## Heading
 
-This filter adds formatting to heading text.
-[This is the color for format]{custom-style="myhl231108"}
+This filter adds formatting to heading text.  
+
+  * [This is the color for format]{custom-style="mypink"}.  
+  
+  * [Pink with bold]{custom-style="mypinkbold"}
 
 
