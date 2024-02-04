@@ -20,7 +20,7 @@ color_span = function(el)
     -- encapsulate in latex code
     table.insert(
       el.content, 1,
-      pandoc.RawInline('latex', '\\textcolor{'..color..'}{')
+      pandoc.RawInline('latex', '\\'..color..'{')
     )
     table.insert(
       el.content,
